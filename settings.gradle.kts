@@ -12,7 +12,9 @@ rootProject.projectDir
     }
 
 pluginManagement {
-  includeBuild("build-logic")
+  includeBuild("build-logic") {
+    name = "earbug-build-logic"
+  }
 }
 
 apply(from = "./gradle/repositories.gradle.kts")
